@@ -8,7 +8,7 @@ module "db" {
 
   # All available versions: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.VersionMgmt
   engine            = "mysql"
-  engine_version    = "5.7.19"
+  engine_version    = "5.7.22"
   instance_class    = "db.t2.large"
   allocated_storage = 5
   storage_encrypted = false
