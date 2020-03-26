@@ -8,7 +8,7 @@ key = "tower/us-east-1/tools/virginia/tower.tfstate"
 
 region = "us-east-1"
 
-dynamodb_table = "terraform-team1"
+dynamodb_table = "terraform-team2"
 
   }
 

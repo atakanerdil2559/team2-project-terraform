@@ -1,16 +1,10 @@
-##############################################################
-# Data sources to get VPC, subnets and security group details
-##############################################################
-data "aws_vpc" "default" {
-  default = true
-}
-
-data "aws_subnet_ids" "all" {
-  vpc_id = data.aws_vpc.default.id
-}
-
-data "aws_security_group" "default" {
-  vpc_id = data.aws_vpc.default.id
-  name   = "default"
+# Pulls VPC,subnet,igw information e.g network info
+data "terraform_remote_state" "mysql" {
+  backend = "s3"
+  config = {
+    bucket = "terraform-project-backend-2020"
+    key    = "tower/us-east-1/tools/virginia/tower.tfstate"
+    region = "us-east-1"
+  }
 }
 
