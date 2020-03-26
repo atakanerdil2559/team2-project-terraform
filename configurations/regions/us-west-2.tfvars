@@ -3,6 +3,7 @@ region = "us-west-2"
 #  Provide a region for VPC
 environment                     =   "Oregon"
 database_name                   =   "db_team2"
+dynamodb                        =   "terraform.team2"
 
 # Choose az's to create DB
 az1                             =       "us-west-2a"
