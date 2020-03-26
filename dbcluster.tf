@@ -18,3 +18,4 @@ resource "aws_rds_cluster" "mydb" {
   skip_final_snapshot     = true
   preferred_backup_window = "07:00-09:00"
 
+}
