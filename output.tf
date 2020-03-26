@@ -4,3 +4,7 @@ output "database_name" {
 output "region" {
     value = "${var.region}"
 }
+
+output "dynamodb" {
+  value = "${var.dev.dynamodb_table}"
+}
