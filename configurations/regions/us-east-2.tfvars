@@ -5,7 +5,6 @@ environment                     =   "Ohio"
 database_name                   =   "db_team2"
 dynamodb                        =   "terraform.team2"
 
-
 # Choose az's to create DB
 az1                             =       "us-east-2a"
 az2                             =       "us-east-2b"
