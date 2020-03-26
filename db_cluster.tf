@@ -4,11 +4,8 @@
 resource "aws_rds_cluster" "mydb" {
 
   cluster_identifier = "mysqldb-team2"
-
-  # All available versions: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.VersionMgmt
   engine              = "aurora"
   engine_version      = "5.6.10a"
-
 
   # db name, username, passwd
   database_name              = "db_team2"
