@@ -5,8 +5,8 @@ output "region" {
     value = "${var.region}"
 }
 
-output "dynamodb" {
+output "dynamodb_table" {
 
-  value = "${var.dynamodb}"
+  value = "${var.dynamodb_table}"
 
 }

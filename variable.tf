@@ -2,4 +2,4 @@ variable "database_name" {}
 
 variable "region" {}
 
-variable "dynamodb" {}
+variable "dynamodb_table" {}
