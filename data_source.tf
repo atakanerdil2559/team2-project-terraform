@@ -3,7 +3,7 @@ data "terraform_remote_state" "mysql" {
   backend = "s3"
   config = {
     bucket = "terraform-project-backend-2020"
-    key    = "team2/us-east-1/tools/virginia/team2.tfstate"
+    key    = "tower/us-east-1/tools/virginia/new-tower.tfstate"
     region = "us-east-1"
   }
 }

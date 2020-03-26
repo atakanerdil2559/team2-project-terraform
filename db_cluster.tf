@@ -16,3 +16,11 @@ resource "aws_rds_cluster" "mydb" {
   preferred_backup_window    = "07:00-09:00"
 
 }
+
+resource "aws_rds_cluster_endpoint" "mydb" {
+  cluster_identifier          = "mysqldb-team2"
+  cluster_endpoint_identifier = "reader"
+  custom_endpoint_type        = "READER"
+}
+
+
