@@ -1,5 +1,5 @@
-output "db_name" {
-    value = "${var.db_name}"
+output "database_name" {
+    value = "${var.database_name}"
 }
 output "region" {
     value = "${var.region}"

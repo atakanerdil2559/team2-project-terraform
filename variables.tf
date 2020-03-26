@@ -1,3 +1,3 @@
-variable "db_name" {}
+variable "database_name" {}
 
 variable "region" {}
