@@ -15,7 +15,7 @@ resource "aws_rds_cluster" "mydb" {
   port = "443"
   port = "3306"
   sec_group_name = "${data.terraform_remote_state.mysql.sec_group_2}"
-  db_subnet_group_name = "${aws_subnet."dev_private.id}"
+  db_subnet_group_name = "${data.terraform_remote_state.aws_subnet."dev_private.id}"
 }
 
 resource "aws_rds_cluster_endpoint" "mysqldb" {
