@@ -17,10 +17,11 @@ resource "aws_rds_cluster" "mydb" {
 
 }
 
-resource "aws_rds_cluster_endpoint" "mydb" {
+resource "aws_rds_cluster_endpoint" "mysqldb-team2" {
   cluster_identifier          = "mysqldb-team2"
   cluster_endpoint_identifier = "reader"
-  custom_endpoint_type        = "READER"
+  reader_endpoint_type        = "READER"
 }
+
 
 
