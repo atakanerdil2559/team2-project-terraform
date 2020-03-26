@@ -2,6 +2,7 @@ region = "us-east-1"
 
 #  Provide a region for VPC
 environment                     =   	"virginia"
+database_name                   =        "db_team2"
 
 s3_bucket                       =	"terraform-project-backend-2020-team2"
 s3_folder_region                =	"us-east-1"
