@@ -15,6 +15,6 @@ s3_folder_region                =	"us-east-1"
 
 
 
-s3_folder_project               =   "tower"
+s3_folder_project               =   "team2"
 s3_folder_type                  =   "tools"
-s3_tfstate_file                 =   "tower.tfstate"
+s3_tfstate_file                 =   "team2.tfstate"
