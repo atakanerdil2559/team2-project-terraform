@@ -1,7 +1,7 @@
-region = "us-east-1"
+region = "eu-west-1"
 
 #  Provide a region for VPC
-environment                     =   "N.Virginia"
+environment                     =   "Ireland"
 database_name                   =   "db_team2"
 
 s3_bucket                       =	"terraform-project-backend-2020-team2"
