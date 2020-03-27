@@ -1,8 +1,16 @@
 #########
 # DB
 #########
+resource "aws_db_subnet_group" "default" {
+  name = "subnet"
+  subnet_ids = [
+    "${data.terraform_remote_state.mysql.Private_Subnet1}",
+    "${data.terraform_remote_state.mysql.Private_Subnet2}",
+    "${data.terraform_remote_state.mysql.Private_Subnet3}"
+    ]
+}
 resource "aws_rds_cluster" "mydb" {
-  cluster_identifier = "mysqldb-team2"
+  cluster_identifier  = "mysqldb-team2"
   engine              = "aurora"
   engine_version      = "5.6.10a"
   # db name, username, passwd
@@ -14,17 +22,6 @@ resource "aws_rds_cluster" "mydb" {
   preferred_backup_window    = "07:00-09:00"
   port = "443"
   port = "3306"
-  sec_group_name = "${data.terraform_remote_state.mysql.sec_group_2}"
-  db_subnet_group_name = "${data.terraform_remote_state.aws_subnet."dev_private.id}"
+  vpc_security_group_ids = ["${data.terraform_remote_state.mysql.sec_group_2}"]
+  db_subnet_group_name = "${aws_db_subnet_group.default.name}"
 }
-
-resource "aws_rds_cluster_endpoint" "mysqldb" {
-  cluster_identifier          = "mysqldb-team2"
-  cluster_endpoint_identifier = "reader"
-  custom_endpoint_type        = "READER"
-}
-
-
-
-
-
