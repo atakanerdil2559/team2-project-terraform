@@ -22,6 +22,6 @@ resource "aws_rds_cluster" "mydb" {
   preferred_backup_window    = "07:00-09:00"
   port = "443"
   port = "3306"
-  vpc_security_group_ids = ["${data.terraform_remote_state.mysql.sec_group_2}"]
+  vpc_security_group_ids = ["${data.terraform_remote_state.mysql.sec_group_1}"]
   db_subnet_group_name = "${aws_db_subnet_group.default.name}"
 }
