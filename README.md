@@ -63,5 +63,6 @@ RDS gets created but endpoints take too long to create.
 
 Created RDS successfully with the outputs as below:
 
-<img width="1223" alt="Screen Shot 2020-03-27 at 8 45 47 PM" src="https://user-images.githubusercontent.com/59778896/77811470-e2af2a80-7070-11ea-9af0-90b101f52700.png">
+<img width="720" alt="Screen Shot 2020-03-27 at 9 28 52 PM" src="https://user-images.githubusercontent.com/59778896/77811617-f6a75c00-7071-11ea-9e73-6bf264307827.png">
+
   
