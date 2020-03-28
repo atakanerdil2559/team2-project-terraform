@@ -46,7 +46,7 @@ ACTION:
      mysql -h <RDS endpoint> -u <mysqlusername> -p 
 
 
-RESULT:
+RESULT: +
 
 Created RDS successfully with the outputs as below:
 
