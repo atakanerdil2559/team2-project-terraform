@@ -12,7 +12,7 @@ TASK:
   task _ picture
   To perform above task, we created data_source file in our repository to pull VPC information from Team1's backend using their backend key. 
 
-       * (data_source picture)
+ ![](images/https://files.slack.com/files-pri/T3KACT7EH-F010YN5A2QG/screenshot_216.png)
 
 Added multiple regions to test
 used interpolation and variables to code our db_cluster file
