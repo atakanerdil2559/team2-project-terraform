@@ -70,25 +70,34 @@ Created RDS successfully with the outputs as below:
  
  # 1 Day :
  
-Tatiana - 5 hours (+ additional 5 hours )             
+Tatiana - 5 hours (+ additional 5 hours )   
+
 Gulmira - 5 hours
+
 Safa    - 5 hours
+
 Merve   - 5 hours
 
 
  # 2 Day :
  
-Tatiana - 7 hours             
+Tatiana - 7 hours
+
 Gulmira - 7 hours
+
 Safa    - 7 hours
+
 Merve   - 7 hours
 
 
  # 3 Day :
  
-Tatiana - 6 hours             
+Tatiana - 6 hours   
+
 Gulmira - 6 hours
+
 Safa    - 6 hours (+ additional 2.5 hours)
+
 Merve   - 6 hours (+ additional 2.5 hours)
 
 
