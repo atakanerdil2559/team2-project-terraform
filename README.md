@@ -1,15 +1,20 @@
 
 ## SITUATION:
 
- Creating database using AWS RDS with terraform on custom VPC created by Team1.
+ #### Create database using AWS RDS with terraform on a custom VPC created by Team1.
+ ##### Pre-requisites
    Region: us-east-1
+   
    Terraform version: 0.11.14
+   
    Database engine: Aurora(mysql) 
+   
    Engine version: 5.6.10a 
   
 
 ## TASK:
-  task _ picture
+  <img width="865" alt="Screen Shot 2020-03-27 at 8 44 33 PM" src="https://user-images.githubusercontent.com/59778896/77811007-f016e580-706d-11ea-9373-32c8ac97993b.png">
+  
   To perform above task, we created data_source file in our repository to pull VPC information from Team1's backend using their backend key. 
  ![](images/https://files.slack.com/files-pri/T3KACT7EH-F010YN5A2QG/screenshot_216.png)
 
