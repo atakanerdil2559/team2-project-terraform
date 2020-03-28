@@ -1,5 +1,5 @@
 
-# SITUATION:
+## SITUATION:
 
  Creating database using AWS RDS with terraform on custom VPC created by Team1.
    Region: us-east-1
@@ -8,7 +8,7 @@
    Engine version: 5.6.10a 
   
 
-# TASK:
+## TASK:
   task _ picture
   To perform above task, we created data_source file in our repository to pull VPC information from Team1's backend using their backend key. 
  ![](images/https://files.slack.com/files-pri/T3KACT7EH-F010YN5A2QG/screenshot_216.png)
@@ -33,7 +33,7 @@ waiting on other teams
 RDS creating but endpoints taking long to create. 
 
 
-# ACTION:
+## ACTION:
   
   Fixed our .tfvars file to have the correct information (our backend (S3)). This resolved 1st issue we had.
   communicated with other teams whenever state file was broken. 
@@ -45,7 +45,7 @@ RDS creating but endpoints taking long to create.
      mysql -h <RDS endpoint> -u <mysqlusername> -p 
 
 
-# RESULT: 
+## RESULT: 
 
 Created RDS successfully with the outputs as below:
 
