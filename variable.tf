@@ -20,5 +20,5 @@ variable "skip_final_snapshot" {}
 
 variable "preferred_backup_window" {}
 
-variable "port" {}
+# variable "port" {}
 
