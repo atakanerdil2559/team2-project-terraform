@@ -5,9 +5,9 @@ output "region" {
     value = "${var.region}"
 }
 
-output "Team1_Output_sec_group" {
-  value = "${data.terraform_remote_state.mysql.sec_group_1}"
-}
+# output "Team1_Output_sec_group" {
+#   value = "${data.terraform_remote_state.mysql.sec_group_1}"
+# }
 
 output "writer_aws_rds_endpoint" {
   value = "Writer ${aws_rds_cluster.mydb.endpoint}"
