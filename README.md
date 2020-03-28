@@ -9,9 +9,7 @@ SITUATION:
   
 
 TASK:
-  +
-       
-
+  task _ picture
   To perform above task, we created data_source file in our repository to pull VPC information from Team1's backend using their backend key. 
 
        * (data_source picture)
