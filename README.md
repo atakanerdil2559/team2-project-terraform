@@ -1,5 +1,5 @@
 
-## SITUATION:
+# SITUATION:
 
  ### Create database using AWS RDS with terraform on a custom VPC created by Team1.
  ### Pre-requisites
@@ -13,7 +13,7 @@ Database engine: AWS Aurora(mysql)
 Engine version: 5.6.10a 
   
 
-## TASK:
+# TASK:
   <img width="865" alt="Screen Shot 2020-03-27 at 8 44 33 PM" src="https://user-images.githubusercontent.com/59778896/77811007-f016e580-706d-11ea-9373-32c8ac97993b.png">
   
  ### Pre-requsites
@@ -45,7 +45,7 @@ Waiting on other teams
 RDS gets created but endpoints take too long to create. 
 
 
-## ACTION:
+# ACTION:
   
   Fixed our .tfvars file to have the correct information (our backend (S3)). This resolved 1st issue we had.
 
@@ -59,9 +59,9 @@ RDS gets created but endpoints take too long to create.
      mysql -h <RDS endpoint> -u <mysqlusername> -p 
 
 
-## RESULT: 
+# RESULT: 
 
 Created RDS successfully with the outputs as below:
 
-
+<img width="1223" alt="Screen Shot 2020-03-27 at 8 45 47 PM" src="https://user-images.githubusercontent.com/59778896/77811470-e2af2a80-7070-11ea-9af0-90b101f52700.png">
   
