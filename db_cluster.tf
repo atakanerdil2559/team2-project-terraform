@@ -1,7 +1,7 @@
 #########
 # DB
 #########
-resource "aws_db_subnet_group" "default" {
+resource "aws_db_subnet_group" "default1" {
   name = "subnet"
   subnet_ids = [
     "${data.terraform_remote_state.mysql.Private_Subnet1}",
@@ -22,5 +22,5 @@ resource "aws_rds_cluster" "mydb" {
   preferred_backup_window    = "${var.preferred_backup_window}"
 #   port = "${var.port}"
   vpc_security_group_ids = ["${data.terraform_remote_state.mysql.sec_group_1}"]
-  db_subnet_group_name = "${aws_db_subnet_group.default.name}"
+  db_subnet_group_name = "${aws_db_subnet_group.default1.name}"
 }

@@ -10,7 +10,7 @@ az1                             =   "us-east-1a"
 az2                             =   "us-east-1b"
 az3                             =   "us-east-1c"
 
-s3_bucket                       =	"terraform-project-backend-2020-team2"
+s3_bucket                       =	"terraform-project-backend1"
 s3_folder_region                =	"us-east-1"
 
 
